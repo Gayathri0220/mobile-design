@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>User-profile</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 500px;
+            height: 1000px;
+            border-radius: 10px;
+            border-style: solid;
+            align-items: center;
+            background-color: rgb(216, 219, 221);
+        }
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50% ;
+    
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(205, 39, 152);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 400px;
+            flex-direction: column;
+        }  
+        .logo p{
+            font-size: 20px;
+            color: white;
+            font-weight: 700;
+        } 
+        .form{
+            width: 400px;
+            height: 550px;
+            background-color: white;
+            display: flex;
+            
+            
+        }
+        .cont{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            
+        
+        }
+        .wrapper{
+            color: black;
+            width: 320px;
+            background-color: white;
+            height: 600px;
+            position: absolute;
+            top: -50px;
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .input-box{
+            position: relative;
+            width: 90%;
+            height: 50px;
+            
+            margin-right: 40px;
+            
+            
+        }
+        
+        .input-box input{
+            width: 95%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            border-radius: 40px;
+            font-size: 16px;
+            padding-left: 42px;
+            border-style: solid;
+            border-color: grey;
+        
+        }
+        
+        .input-box input::placeholder{
+            color: black;
+            
+            position: absolute;
+        }
+        .input-box i{
+            position: absolute;
+            left: 10px;
+            top: 52%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            background-color: rgb(205, 39, 152);
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: white;
+        }
+    
+        .wrapper .btn{
+            width: 90%;
+            height: 45px;
+            background-color: rgb(205, 39, 152);
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(116, 113, 113, 0.1);
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            position: relative;
+            margin: 20px 20px;
+            cursor: pointer;
+            
+        }
+          
+        .names{
+            margin: 15px 0px;
+            display: block;
+            
+        }
+       .names label{
+            
+            color: rgb(205, 39, 152);
+            font-weight: 700;
+            font-size: 20px;
+       }
+       .gender-options {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .gender-options label {
+            font-size: 14px;
+            color: black;
+            font-weight: normal;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="profile.jpeg"><i style="padding-left: 130px; transform: translateY(-120px); font-size: 20px; color: white;" class="fa fa-image" aria-hidden="true"></i>
+            <p>RIYA  <i class="fa fa-pencil-square" aria-hidden="true"></i></p>
+        </div>
+        <div class="cont">
+        <div class="wrapper">
+            <form action="">
+                <h1>SIGN IN</h1>
+                <div class="names">
+                <div><label>User Name</label></div>
+                <div class="input-box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Enter Username" required>
+                </div></div>
+                <div class="names">
+                    <div><label>Email Id</label></div>
+                    <div class="input-box">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" placeholder="Enter email" required>
+                    </div></div>
+                <div class="names">
+                    <div><label>Mobile Number</label></div>
+                    <div class="input-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" placeholder="Enter your 10 digit mobile number" required>
+                </div></div>
+                <div class="names">
+                    <div><label>Date of Birth </label></div>
+                    <div class="input-box">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="date" placeholder="DD/MM/YYYY" required>
+                    </div></div>
+                    <div class="names">
+                        <div><label>Gender</label></div>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="male" required> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female" required> Female
+                            </label>
+                            
+                        </div>
+                
+                <button type="submit" class="btn">SAVE</button>
+                
+            </form>
+
+            
+        </div></div>
+    
+    </div>
+</body>
+</html>

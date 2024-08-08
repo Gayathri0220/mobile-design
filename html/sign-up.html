@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 400px;
+            height: 800px;
+            border-radius: 10px;
+            border-style: solid;
+            align-items: center;
+            background-color: white;
+        }
+        .wrapper{
+            height: 95%;
+          
+        }
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .input-box{
+            position: relative;
+            width: 80%;
+            height: 50px ;
+            margin: 5px 40px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex; 
+        }
+        .wrapper form{
+            margin-top: 60px;
+           
+        }
+        
+        .input-box input{
+            width: 95%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            border-radius: 40px;
+            font-size: 16px;
+            padding-left: 42px;
+            border-style: solid;
+            border-color: grey;
+        
+        }
+        
+        .input-box input::placeholder{
+            color: black;
+            
+            position: absolute;
+        }
+        .input-box i{
+            position: absolute;
+            left: 10px;
+            top: 52%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            background-color: rgb(205, 39, 152);
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: white;
+        }
+        .wrapper .btn{
+            width: 90%;
+            height: 45px;
+            background-color: rgb(205, 39, 152);
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(116, 113, 113, 0.1);
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            position: relative;
+            margin: 20px 20px;
+            cursor: pointer;
+            
+        }
+        .names{
+            margin: 15px 0px;
+            display: block;
+            
+        }
+       .names label{
+            margin-left: 50px;
+            color: rgb(205, 39, 152);
+            font-weight: 700;
+            font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>SIGN IN</h1>
+                <p style="display: flex;
+                  justify-content: center;
+                  ">lorem ipsum is simply dummy text of the printing</p>
+                  <p style="display: flex; justify-content: center;">and typesetting industry.</p>
+            <form action="">
+                
+                <div class="names">
+
+                <div><label>User Name</label></div>
+                <div class="input-box">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input type="text" placeholder="Enter Username" required>
+                </div></div>
+                <div class="names">
+                <div><label>Email Id</label></div>
+                <div class="input-box">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" placeholder="Enter Email" required>
+                </div></div>
+                <div class="names">
+                <div><label>Mobile Number</label></div>
+                <div class="input-box">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="number" placeholder="Enter your 10 digit mobile number" required>
+                </div></div>
+                <div class="names">
+                    <div><label>Password</label></div>
+                <div class="input-box">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Password should be 8-15 characters" required>
+                </div></div>
+                <div class="names">
+                <div><label>Confirm Password</label></div>
+                <div class="input-box">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input type="password" placeholder="Repeat the Password" required>
+                </div></div>
+                
+                <button type="submit" class="btn">SIGN  UP</button>
+                
+            </form>
+
+            
+        </div>
+    </div>
+</body>
+</html>
